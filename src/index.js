@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Keycloak from 'keycloak-js';
 import App from './App';
+import store from './redux/store';
 
 const keycloak = Keycloak({
   url: 'http://localhost:8080/auth',
@@ -11,6 +12,7 @@ const keycloak = Keycloak({
 
 keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
   if (authenticated) {
+    store.dispatch({ type: 'LOGIN', payload: { ...keycloak } });
     ReactDOM.render(
       React.createElement(App),
       document.getElementById('root'),
