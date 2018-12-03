@@ -4,11 +4,7 @@ import Keycloak from 'keycloak-js';
 import App from './App';
 import store from './redux/store';
 
-const keycloak = Keycloak({
-  url: 'http://localhost:8080/auth',
-  realm: 'myrealm',
-  clientId: 'myApp',
-});
+const keycloak = Keycloak();
 
 keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
   if (authenticated) {

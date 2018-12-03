@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const GenerateJsonPlugin = require('generate-json-webpack-plugin');
+const keycloak = require('../keycloak.json');
 
 module.exports = {
     entry: {
@@ -52,6 +54,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: path.resolve(__dirname, '../public', 'index.html'),
         }),
+        new GenerateJsonPlugin('keycloak.json', keycloak),
     ],
     resolve: {
         extensions: ['.js', '.jsx']

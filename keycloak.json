@@ -1,0 +1,5 @@
+{
+  "auth-server-url": "http://localhost:8080/auth",
+  "realm": "myrealm",
+  "resource": "myApp"
+}
