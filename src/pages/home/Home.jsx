@@ -6,98 +6,12 @@ const Home = () => (
     <Row gutter={16}>
       <Col span={24}>
         <Card
-          title="Card title"
+          title="Main page"
           className="margin-bottom-16"
+          style={{ height: '70vh' }}
           bordered={false}
         >
-          Card content
-        </Card>
-      </Col>
-    </Row>
-    <Row gutter={16}>
-      <Col span={8}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-      <Col span={8}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-      <Col span={8}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-    </Row>
-    <Row gutter={16}>
-      <Col span={12}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-      <Col span={12}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-    </Row>
-    <Row gutter={16}>
-      <Col span={6}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-      <Col span={6}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-      <Col span={6}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
-        </Card>
-      </Col>
-      <Col span={6}>
-        <Card
-          title="Card title"
-          className="margin-bottom-16"
-          bordered={false}
-        >
-          Card content
+          Main content
         </Card>
       </Col>
     </Row>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Badge, Col, Dropdown, Icon, Layout, Menu, Row } from 'antd';
+import { Col, Dropdown, Icon, Layout, Menu, Row } from 'antd';
 
 const { Header } = Layout;
 
@@ -21,10 +21,12 @@ const HeaderComponent = () => (
     className="custom-header"
   >
     <Row>
-      <Col span={24} style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <span>
-          <Badge count={1}><Avatar icon="user" /></Badge>
-        </span>
+      <Col span={12} offset={6} style={{ display: 'flex', justifyContent: 'center' }}>
+        <div>
+          <h1>React Keycloak App</h1>
+        </div>
+      </Col>
+      <Col span={6} style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <div className="user-info">
           <Dropdown overlay={menu} trigger={['click']}>
             <span style={{ marginLeft: '16px' }}>
